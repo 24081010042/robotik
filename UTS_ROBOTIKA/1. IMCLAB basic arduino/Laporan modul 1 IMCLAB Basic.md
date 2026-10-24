@@ -45,19 +45,17 @@ Berdasarkan pengujian yang dilakukan, motor berhasil berputar ketika diberikan p
 
 ## 6. Dokumentasi
 
-Simpan foto praktikum di folder `images`, kemudian sesuaikan nama file dengan gambar yang kamu unggah.
-
 ### Proses upload program
 
-![Proses upload program](images/modul1-upload-esp32.png)
+![Proses Upload Program](Dokumentasi/Proses%20upload%20program.jpg)
 
 ### Pengujian LED dan motor menyala
 
-![Pengujian LED dan motor menyala](images/modul1-serial-on.png)
+![Motor ON](Dokumentasi/motor%20ON.jpg)
 
 ### Pengujian LED dan motor mati
 
-![Pengujian LED dan motor mati](images/modul1-serial-off.png)
+![Motor OFF](Dokumentasi/motor%20OFF.jpg)
 
 
 ## 7. Analisis
