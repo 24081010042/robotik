@@ -1,65 +1,78 @@
+# MODUL 1 — BASIC ROBOTIKA MENGGUNAKAN KIT iMCLab
 
+**Nama:** Valan Akbar Saputra  
+**NPM:** 24081010042  
+**Mata Kuliah:** Robotika
 
-/*
-  MODUL 1: Basic Robotika
-  Kontrol LED dan Motor DC menggunakan ESP32
-  Perintah Serial Monitor:
-  1 = Motor dan LED ON
-  0 = Motor dan LED OFF
-*/
+## 1. Tujuan
 
-const int ledPin = 2;
-const int motorIN1 = 27;
-const int motorIN2 = 26;
-const int motorPWM = 12;
+Memahami dasar pengendalian LED dan motor DC menggunakan ESP32 pada kit iMCLab melalui Serial Monitor Arduino IDE.
 
-const int freq = 5000;
-const int resolution = 8;
-const int channel = 0;
+## 2. Alat dan Bahan
 
-void setup() {
-  Serial.begin(115200);
+- Kit robotika iMCLab dengan ESP32
+- Motor DC dan driver motor
+- LED
+- Kabel USB
+- Laptop atau komputer
+- Arduino IDE
 
-  pinMode(ledPin, OUTPUT);
-  pinMode(motorIN1, OUTPUT);
-  pinMode(motorIN2, OUTPUT);
+## 3. Dasar Teori
 
-  // Konfigurasi PWM untuk ESP32
-  if (!ledcAttach(motorPWM, freq, resolution)) {
-    Serial.println("Gagal mengatur PWM!");
-    while (true) {
-      delay(1000);
-    }
-  }
+ESP32 merupakan mikrokontroler yang dapat digunakan untuk mengendalikan perangkat elektronik. Pada praktikum ini, ESP32 menerima perintah melalui Serial Monitor untuk mengontrol LED dan motor DC.
 
-  digitalWrite(ledPin, LOW);
-  digitalWrite(motorIN1, LOW);
-  digitalWrite(motorIN2, LOW);
-  ledcWrite(motorPWM, 0);
+Perintah `1` digunakan untuk menyalakan LED dan motor, sedangkan perintah `0` digunakan untuk mematikan LED dan motor. Pengaturan motor menggunakan sinyal PWM (*Pulse Width Modulation*) melalui driver motor.
 
-  Serial.println("Modul 1 siap.");
-  Serial.println("Ketik 1 untuk ON dan 0 untuk OFF.");
-}
+## 4. Langkah-Langkah Praktikum
 
-void loop() {
-  if (Serial.available() > 0) {
-    char perintah = Serial.read();
+1. Menghubungkan kit iMCLab ke laptop menggunakan kabel USB.
+2. Membuka Arduino IDE dan memasukkan program kontrol LED dan motor.
+3. Memilih board ESP32 dan port yang sesuai.
+4. Mengunggah program ke ESP32.
+5. Membuka Serial Monitor dengan baud rate 115200.
+6. Mengirim perintah `1` untuk menyalakan LED dan motor.
+7. Mengirim perintah `0` untuk mematikan LED dan motor.
+8. Mengamati hasil pengujian dan mengambil dokumentasi.
 
-    if (perintah == '1') {
-      digitalWrite(ledPin, HIGH);
-      digitalWrite(motorIN1, HIGH);
-      digitalWrite(motorIN2, LOW);
-      ledcWrite(motorPWM, 200);
+## 5. Hasil Pengujian
 
-      Serial.println("Motor dan LED ON");
-    }
-    else if (perintah == '0') {
-      ledcWrite(motorPWM, 0);
-      digitalWrite(motorIN1, LOW);
-      digitalWrite(motorIN2, LOW);
-      digitalWrite(ledPin, LOW);
+| Perintah | Hasil yang Diharapkan |
+|---|---|
+| `1` | LED menyala dan motor berputar |
+| `0` | LED mati dan motor berhenti |
 
-      Serial.println("Motor dan LED OFF");
-    }
-  }
-}
+Berdasarkan pengujian yang dilakukan, motor berhasil berputar ketika diberikan perintah untuk menyala. Pengujian perintah mati dilakukan melalui Serial Monitor untuk memastikan motor dan LED dapat dikendalikan.
+
+## 6. Dokumentasi
+
+Simpan foto praktikum di folder `images`, kemudian sesuaikan nama file dengan gambar yang kamu unggah.
+
+### Proses upload program
+
+![Proses upload program](images/modul1-upload-esp32.png)
+
+### Pengujian LED dan motor menyala
+
+![Pengujian LED dan motor menyala](images/modul1-serial-on.png)
+
+### Pengujian LED dan motor mati
+
+![Pengujian LED dan motor mati](images/modul1-serial-off.png)
+
+### Kit iMCLab
+
+![Kit iMCLab](images/modul1-kit-imclab.jpg)
+
+## 7. Analisis
+
+Pada praktikum ini, ESP32 berfungsi sebagai pengendali LED dan motor DC. Perintah yang dikirim melalui Serial Monitor diproses oleh program untuk mengatur kondisi LED dan motor.
+
+Sinyal PWM digunakan untuk mengatur daya yang diberikan kepada motor. Dengan praktikum ini, dapat dipahami cara menghubungkan program mikrokontroler dengan perangkat keras pada kit iMCLab.
+
+## 8. Kesimpulan
+
+Praktikum Modul 1 memberikan pemahaman dasar mengenai penggunaan ESP32 untuk mengendalikan LED dan motor DC melalui Serial Monitor. Praktikum ini menjadi dasar untuk mempelajari pengendalian robot menggunakan Python, Blynk, dan OTA pada modul berikutnya.
+
+## 9. File Program
+
+Kode program Arduino disimpan secara terpisah pada file `modul1_basic_robotika.ino`.
