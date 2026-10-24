@@ -119,7 +119,7 @@ Praktikum ini menunjukkan penerapan komunikasi antara program Python di komputer
 Dokumentasi praktikum Modul 2 terdiri dari:
 
 1. **Screenshot Hasil Pengujian Serial**
-   ![Hasil Pengujian Serial](dokumentasi/Screenshot%20hasil%20pengujian%20serial.png)
+   ![Hasil Pengujian Serial](dokumentasi/Screenshot%20hasil%20pengujian%20serial.jpg)
    Menampilkan hasil komunikasi antara Python dan ESP32, termasuk perintah motor ON/OFF serta perubahan nilai PWM.
 
 2. **Foto ESP32 dan Motor DC Saat Pengujian**
