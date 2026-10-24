@@ -59,9 +59,6 @@ Simpan foto praktikum di folder `images`, kemudian sesuaikan nama file dengan ga
 
 ![Pengujian LED dan motor mati](images/modul1-serial-off.png)
 
-### Kit iMCLab
-
-![Kit iMCLab](images/modul1-kit-imclab.jpg)
 
 ## 7. Analisis
 
