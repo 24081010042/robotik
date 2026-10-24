@@ -116,13 +116,15 @@ Praktikum ini menunjukkan penerapan komunikasi antara program Python di komputer
 
 ### 9. Dokumentasi
 
-Tambahkan dokumentasi berikut pada bagian ini:
+Dokumentasi praktikum Modul 2 terdiri dari:
 
-1. Screenshot kode Arduino IDE.
-2. Screenshot kode Python di Visual Studio Code.
-3. Screenshot proses unggah program ke ESP32.
-4. Screenshot hasil pengujian komunikasi serial.
-5. Foto ESP32 dan rangkaian motor DC saat praktikum.
+1. **Screenshot Hasil Pengujian Serial**
+   ![Hasil Pengujian Serial](dokumentasi/Screenshot%20hasil%20pengujian%20serial.png)
+   Menampilkan hasil komunikasi antara Python dan ESP32, termasuk perintah motor ON/OFF serta perubahan nilai PWM.
 
-Dokumentasi disertakan untuk menunjukkan proses pengerjaan dan hasil pengujian Modul 2.
+3. **Foto ESP32 dan Motor DC Saat Pengujian**
+  ![ESP32 dan Motor DC](dokumentasi/Foto%20ESP32%20dan%20motor%20DC%20saat%20pengujian.jpg)
+   Menampilkan perangkat keras yang digunakan saat praktikum berlangsung.
+
+Dokumentasi ini digunakan sebagai bukti pelaksanaan pengujian sistem kontrol motor DC menggunakan PWM pada ESP32.
 
