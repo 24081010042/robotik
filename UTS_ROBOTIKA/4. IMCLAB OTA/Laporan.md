@@ -94,10 +94,12 @@ Hasil di atas menunjukkan bahwa fungsi dasar kendali dan monitoring telah berjal
 
 ## 9. Dokumentasi
 
-- Screenshot Serial Monitor.
-- Screenshot dashboard Blynk.
-- Foto rangkaian ESP32 dan motor.
-- Bukti proses upload OTA jika tersedia.
+## Blynk dasboard
+
+![Tampilan Blynk dasboard](Dokumentasi/Blynk%20dasboard.jpg)
+## Serial Monitor
+
+![Tampilan Serial Monitor](Dokumentasi/serial%20monitor.jpg)
 
 ## 10. Kesimpulan
 
