@@ -38,6 +38,9 @@ Hasil pengujian serta dokumentasinya dicantumkan berdasarkan praktik yang benar-
 ## Serial Monitor
 
 ![Tampilan Serial Monitor](Dokumentasi/serial%20monitor.jpg)
+## Motor ON
+
+![Tampilan Motor ON](Dokumentasi/motor%20ON.jpg)
 
 ## 8. Kesimpulan
 Modul ini bertujuan menerapkan komunikasi ESP32 dengan Blynk Cloud untuk mendukung kontrol motor melalui jaringan Wi-Fi. Keberhasilan setiap fungsi dicatat berdasarkan hasil pengujian praktikum.
