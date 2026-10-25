@@ -32,7 +32,12 @@ Pengujian dilakukan dengan memeriksa koneksi ESP32, mengoperasikan kontrol motor
 Hasil pengujian serta dokumentasinya dicantumkan berdasarkan praktik yang benar-benar dilakukan.
 
 ## 7. Dokumentasi
-Folder `bukti-pengujian/` berisi screenshot program, Serial Monitor, dashboard Blynk, dan dokumentasi rangkaian.
+## Dokumentasi Blynk
+
+![Tampilan Blynk](Dokumentasi/Blynk.jpg)
+## Serial Monitor
+
+![Tampilan Serial Monitor](Dokumentasi/serial%20monitor.jpg)
 
 ## 8. Kesimpulan
 Modul ini bertujuan menerapkan komunikasi ESP32 dengan Blynk Cloud untuk mendukung kontrol motor melalui jaringan Wi-Fi. Keberhasilan setiap fungsi dicatat berdasarkan hasil pengujian praktikum.
